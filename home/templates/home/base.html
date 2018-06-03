@@ -1,0 +1,38 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Osu Server List</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+
+    <div class="ui full height main wrapper">
+
+
+
+
+<div class="ui secondary teal fixed-height stackable blue background main menu no margin bottom" id="navbar">
+	<div class="ui teal container">
+		<div class="item">
+			<b>Osu!Server List</b>
+		</div>
+			<a class="item" href="/home"><i class="blue home icon"></i>Home</a>
+			<a class="item" href="/servers"><i class="blue server icon"></i>Servers</a>
+      	<a class="item" href="mailto:kazuki@enjuu.click"><i class="blue plus icon"></i>Add a Server</a>
+		</div>
+  </div>
+</div>
+    {% block home %}
+
+    {% endblock %}
+
+
+
+  </body>
+</html>

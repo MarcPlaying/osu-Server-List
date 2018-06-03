@@ -1,0 +1,25 @@
+#item {
+}
+
+#card {
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  align-text: center;
+}
+
+.ui.cards {
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  align-text: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
