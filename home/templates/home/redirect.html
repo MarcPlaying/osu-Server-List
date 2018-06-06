@@ -1,11 +1,16 @@
 {% extends "home/base.html" %}
 
+{% block head %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="0;URL=http://{{server}}" />
+{% endblock %}
+
 {% block home %}
 {% load staticfiles %}
 
 <div class="ui raised padded text container segment">
-  <h2 class="ui header">Redirect to {server}</h2>
-  <p>If the redirect don't work <a href="http://{server}">click here</a></p>
+  <h2 class="ui header">Redirect to {{server}}</h2>
+  <p>If the redirect don't work <a href="http://{{server}}">click here</a></p>
 </div>
 
 {% endblock %}
