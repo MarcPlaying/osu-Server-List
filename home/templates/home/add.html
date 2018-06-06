@@ -1,0 +1,23 @@
+{% extends "home/base.html" %}
+
+{% block home %}
+{% load staticfiles %}
+
+<img src="{% static 'img/headers/girlinroom.png' %}" class="responsive" alt="Responsive image">
+
+<div class="ui raised padded text container segment">
+  <h2 class="ui header">Add a Server</h2>
+  <p>Here you can add more Servers.</p>
+  <a href="/add/server">
+  <button class="ui labeled icon button">
+    <i class="plus icon"></i>
+    Add a Server
+  </button></a>
+  <a href="/home">
+  <button class="ui labeled icon button">
+    <i class="home icon"></i>
+    Go Home
+  </button></a>
+</div>
+
+{% endblock %}
