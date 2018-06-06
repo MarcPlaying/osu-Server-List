@@ -1,0 +1,11 @@
+{% extends "home/base.html" %}
+
+{% block home %}
+{% load staticfiles %}
+
+<div class="ui raised padded text container segment">
+  <h2 class="ui header">Redirect to {server}</h2>
+  <p>If the redirect don't work <a href="http://{server}">click here</a></p>
+</div>
+
+{% endblock %}
