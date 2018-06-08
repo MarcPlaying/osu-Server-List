@@ -4,13 +4,10 @@ import MySQLdb
 
 def ref(request):
     query = request.GET.get('s')
-    if query in "list.enjuu.click":
-        context= {
-            'server': query,
-        }
-        return render(request, 'home/redirect.html', context)
-    else:
-        return render(request, 'home/redirect.html')
+    context= {
+        'server': query,
+    }
+    return render(request, 'home/redirect.html', context)
 
 def addserver(request):
         return render(request, 'home/addserver.html')
@@ -20,3 +17,5 @@ def server(request):
         return render(request, 'home/servers.html')
 def index(request):
         return render(request, 'home/home.html')
+def nf(request):
+        return render(request, 'home/nf.html')

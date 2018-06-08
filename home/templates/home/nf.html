@@ -1,0 +1,16 @@
+{% extends "home/base.html" %}
+
+{% block home %}
+{% load staticfiles %}
+
+<div class="ui raised padded text container segment">
+  <h2 class="ui header">404 not Found</h2>
+  <p>The Site that you have requested was not found</p>
+  <a href="/home/">
+  <button class="ui labeled icon button">
+    <i class="server icon"></i>
+    Go back
+  </button></a>
+</div>
+
+{% endblock %}
