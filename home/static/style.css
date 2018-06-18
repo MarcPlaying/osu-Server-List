@@ -41,3 +41,7 @@ h1 {
     width: 100%;
     height: auto;
 }
+
+.center {
+  position: center;
+}

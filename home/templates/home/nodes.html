@@ -1,0 +1,48 @@
+{% extends "home/base.html" %}
+
+{% block home %}
+{% load staticfiles %}
+
+<img src="{% static 'img/headers/girlwithbubbles.png' %}" class="responsive" alt="Responsive image">
+
+<div class="ui raised padded text container segment">
+  <div class="ui two column doubling stackable grid container">
+    <div class="column">
+      <div class="ui card left">
+        <div class="image">
+          <img src="{{img}}">
+        </div>
+        <div class="content">
+          <a href="{{web}}" class="header">{{servername}}</a>
+          <div class="meta">
+            <span class="date">{{smalldes}}</span>
+          </div>
+          <div class="description">
+            {{longdes}}
+          </div>
+        </div>
+        <div class="extra content">
+          <a>
+            <i class="user icon"></i>
+            {{players}} Users in Leaderboard
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui buttons centeredlist">
+        <a href="{{web}}"><button class="ui button">Join Server</button></a>
+        <a href="/home/"><button class="ui button">Go Back</button></a>
+      </div>
+    <div class="ui one column doubling stackable grid container">
+      <div class="column">
+          <p></p>
+          <p>This Server don't has a full description. If you are the Server Owner. Write me an Full description to Discord(Kazuki#0776) or Mail(kazuki@enjuu.click)</p>
+      </div>
+  </div>
+
+
+    </div>
+  </div>
+</div>
+{% endblock %}

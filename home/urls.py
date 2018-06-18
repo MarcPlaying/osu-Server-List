@@ -2,6 +2,7 @@ from django.conf.urls import include, url
 from . import views
 
 urlpatterns = [
+    url(r'^view$', views.viewserver, name='vs'),
     url(r'^ref$', views.ref, name='ref'),
     url(r'^add/server$', views.addserver, name='addserver'),
     url(r'^add/$', views.add, name='add'),
