@@ -63,8 +63,9 @@ def viewserver(request):
             'smalldes': 'STD PP',
             'longdes': 'SkyCircles is a new Russian osu Server ',
             'players': '91',
+            'rlylongdes': 'SkyCircles is a Russian Osu! server started on February 6th, 2018. It has an active team of developers, currently working on the new frontend, backend an a new anticheat.',
         }
-        return render(request, 'home/nodes.html', context)
+        return render(request, 'home/view.html', context)
     elif(query == '7'):
         context= {
             'web': '/ref?s=gigamons.de',
