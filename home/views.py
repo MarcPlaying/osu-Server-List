@@ -10,9 +10,10 @@ def viewserver(request):
             'servername': 'Akatsuki',
             'smalldes': 'STD & RX PP',
             'longdes': 'Akatsuki is Features Relax and STD PP',
-            'players': '1679',
+            'players': '9111',
+            'rlylongdes': 'This is the Server that runs this Server List. Our private osu! Server. It supports nearly all Gamemodes so STD, AP, RX but nerfed',
         }
-        return render(request, 'home/nodes.html', context)
+        return render(request, 'home/view.html', context)
     elif(query == '2'):
         context= {
             'web': '/ref?s=enjuu.click',
@@ -21,7 +22,7 @@ def viewserver(request):
             'smalldes': 'STD, AP, RX PP',
             'longdes': 'Enjuu is a osu! Private Server that exist since January. Featuring RX and many more Features. ',
             'players': '504',
-            'rlylongdes': 'This is the Server that runs this Server List. Our private osu! Server. It supports nearly all Gamemodes so STD, AP, RX but nerfed',
+            'rlylongdes': 'The Akatsuki servers are two completely separate servers; one dedicated to regular osu PP, and features that youd expect from a private server; and the other featuring PP for relax plays, and a completely unique PP algorithm to fit the nature of the server.',
         }
         return render(request, 'home/view.html', context)
     elif(query == '3'):
