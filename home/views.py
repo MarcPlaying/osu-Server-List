@@ -6,7 +6,7 @@ def viewserver(request):
     if(query == '1'):
         context= {
             'web': '/ref?s=akatsuki.pw',
-            'img': 'https://marc.enjuu.click/download/1930773.png',
+            'img': 'https://s.enjuu.click/s/akatsuki.png',
             'servername': 'Akatsuki',
             'smalldes': 'STD & RX PP',
             'longdes': 'Akatsuki is Features Relax and STD PP',
@@ -17,18 +17,18 @@ def viewserver(request):
     elif(query == '2'):
         context= {
             'web': '/ref?s=enjuu.click',
-            'img': 'https://enjuu.click/static/logos/logo-blue.png',
+            'img': 'https://s.enjuu.click/s/enjuu.png',
             'servername': 'Enjuu',
             'smalldes': 'STD, AP, RX PP',
             'longdes': 'Enjuu is a osu! Private Server that exist since January. Featuring RX and many more Features. ',
-            'players': '504',
+            'players': '300',
             'rlylongdes': 'This is the Server that runs this Server List. Our private osu! Server. It supports nearly all Gamemodes so STD, AP, RX but nerfed',
         }
         return render(request, 'home/view.html', context)
     elif(query == '3'):
         context= {
             'web': '/ref?s=ripple.moe',
-            'img': 'https://marc.enjuu.click/download/1482369.png',
+            'img': 'https://s.enjuu.click/s/ripple.svg',
             'servername': 'Ripple',
             'smalldes': 'STD PP',
             'longdes': 'Ripple is the Private Server with the most Users. ',
@@ -38,7 +38,7 @@ def viewserver(request):
     elif(query == '4'):
         context= {
             'web': '/ref?s=osu.gatari.pw/?e',
-            'img': 'https://marc.enjuu.click/download/9381005.png',
+            'img': 'https://s.enjuu.click/s/gatari.png',
             'servername': 'Gatari',
             'smalldes': 'STD PP',
             'longdes': 'Gatari is a Russian osu Server. With a nice Clan System ',
@@ -48,7 +48,7 @@ def viewserver(request):
     elif(query == '5'):
         context= {
             'web': '/ref?s=vipsu.ml',
-            'img': 'https://marc.enjuu.click/download/2325559.png',
+            'img': 'https://s.enjuu.click/s/vipsu.png',
             'servername': 'Vipsu',
             'smalldes': 'STD own weightend PP',
             'longdes': 'Vipsu is a small and new osu! Private Server ',
@@ -58,7 +58,7 @@ def viewserver(request):
     elif(query == '6'):
         context= {
             'web': '/ref?s=skycircles.ru',
-            'img': 'https://marc.enjuu.click/download/3832546.png',
+            'img': 'https://s.enjuu.click/s/skycircles.png',
             'servername': 'SkyCircles',
             'smalldes': 'STD PP',
             'longdes': 'SkyCircles is a new Russian osu Server ',
@@ -78,12 +78,12 @@ def viewserver(request):
         return render(request, 'home/nodes.html', context)
     elif(query == '8'):
             context= {
-                'web': '/ref?s=osu.xii.nz',
-                'img': 'https://marc.enjuu.click/download/4484948.png',
-                'servername': 'XII',
+                'web': '/ref?s=enshi.pl',
+                'img': 'https://s.enjuu.click/s/enshi.png',
+                'servername': 'Enshi',
                 'smalldes': 'STD PP',
-                'longdes': 'XII is a small and new osu Server ',
-                'players': '20',
+                'longdes': 'This is the Server that runs this Server List. Our private osu! Server. It supports nearly all Gamemodes so STD, AP, RX but nerfed',
+                'players': '47',
             }
             return render(request, 'home/nodes.html', context)
     else:
